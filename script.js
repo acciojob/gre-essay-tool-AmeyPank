@@ -1,5 +1,23 @@
 //your code here
-function countChar(evaluatedTExt,wordCount){
-	var length = document.getElementById(evaluatedTExt).value.length;
-	document.getElementById(wordCount).innerHTML = length;
-}
+ function fun() {
+              
+                var str = document
+                    .getElementById("evaluatedText").value;
+              
+                // Initialize the word counter
+                var count = 0;
+              
+             
+                var splited = str.split(' ');
+              
+               
+                for (var i = 0; i < splited.length; i++) {
+                    if (splited[i] != "") {
+                        count += 1;
+                    }
+                }
+              
+              
+                document.getElementById("wordCount")
+                    .innerHTML = count;
+            }
